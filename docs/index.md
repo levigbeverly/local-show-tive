@@ -3,131 +3,116 @@ title: Overview
 layout: home
 nav_order: 1
 ---
-# Local-Show-Tive
 
-**Local-Show-Tive** is a REST API service that makes local concert planning and searching in the United States easy and streamlined. 
-- _Concert-goers_: You can use **Local-Show-Tive** to find a detailed list of upcoming shows in your area.
-- _Venue owners_: You can use **Local-Show-Tive** to share consistent information about your venue.
-- _Artists, managers, and promoters_: You can use **Local-Show-Tive** to post and update information about your upcoming shows.
+# 🚂 Local-Show-Tive REST API
 
-**Local-Show-Tive** allows users to update and query an ongoing database of concerts and venues.
+**Local-Show-Tive** is a lightweight REST API service for discovering, organizing, and managing local concerts and venues across the United States.
 
-**Local-Show-Tive** is cloud-based and available for use on any device that can connect to the internet. The service is easy to use, and requires minimal to no experience with REST APIs. 
+<div class="card-grid">
+  <div class="card-box">
+    <h3>🎫 Concert-Goers</h3>
+    <p>Discover upcoming local shows, search by venue, and filter by artist.</p>
+  </div>
+  <div class="card-box">
+    <h3>🏟️ Venue Owners</h3>
+    <p>Publish and manage accurate venue details, location data, and schedules.</p>
+  </div>
+  <div class="card-box">
+    <h3>🎸 Artists & Managers</h3>
+    <p>Post show listings, update tour dates, and keep your audience informed.</p>
+  </div>
+</div>
 
-All aboard!
+Built for simplicity, Local-Show-Tive provides an intuitive cloud-based database query layer with zero complex setup required.
+
+*All aboard!*
+
 <p>
-  <img src="img/local-show-tive.jpg" alt="Local-Show-Tive Train Logo" style="width: 300px; height: auto; align: center; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,0.5); object-fit: fill;">
+  <img src="img/local-show-tive.jpg" alt="Local-Show-Tive Train Logo" style="width: 300px; height: auto; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,0.5); object-fit: fill;">
 </p>
 
-## First-time Users
+---
 
-If this is your first time setting up and using **Local-Show-Tive**, see [Getting Started](getting-started.md). The topic walks you through the service prerequisites and how to test the service on your machine.
+## Getting Started
 
-Once you complete the Getting Started process, see [Quickstart](quickstart.md) to quickly set up your first concerts and venues.
+New to Local-Show-Tive? Follow our step-by-step guides to set up prerequisites and test requests locally:
+
+- **[Getting Started Guide](getting-started.html):** Verify requirements and run your first test request.
+- **[Quickstart](quickstart.html):** Set up sample venues and concerts in under 5 minutes.
+
+---
 
 ## Tutorials
 
-Learn how to do the most common **Local-Show-Tive** tasks:
- - [Add a venue](tutorials/add-a-venue.html)
- - [Add a concert](tutorials/add-a-concert.html)
- - [Search for concerts by venue](tutorials/search-for-concerts-by-venue.html)
- - [Search for concerts by artist](tutorials/search-for-concerts-by-artist.html)
+Learn how to complete common tasks step by step:
 
-To view the full list of available tutorials, click **Tutorials** below:
+- [Add a new venue](tutorials/add-a-venue.html)
+- [Add a new concert](tutorials/add-a-concert.html)
+- [Search concerts by venue](tutorials/search-for-concerts-by-venue.html)
+- [Search concerts by artist](tutorials/search-for-concerts-by-artist.html)
+
 <details>
-  <summary>Tutorials</summary>
+  <summary><strong>View All Tutorials</strong></summary>
   
-<ul>
-  <li><strong>venues</strong>
-    <ul>
-      <li><a href="tutorials/add-a-venue.html">Add a venue</a></li>
-      <li><a href="tutorials/update-a-venue.html">Update a venue</a></li>
-      <li><a href="tutorials/delete-a-venue.html">Delete a venue</a></li>
-    </ul>
-  </li>
-  
-  <li><strong>concerts</strong>
-    <ul>
-      <li><a href="tutorials/add-a-concert.html">Add a concert</a></li>
-      <li><a href="tutorials/update-a-concert.html">Update a concert</a></li>
-      <li><a href="tutorials/search-for-concerts-by-venue.html">Search for concerts by venue</a></li>
-      <li><a href="tutorials/search-for-concerts-by-artist.html">Search for concerts by artist</a></li>
-      <li><a href="tutorials/delete-a-concert.html">Delete a concert</a></li>
-    </ul>
-  </li>
-</ul>
-
+  <ul>
+    <li><strong>Venues</strong>
+      <ul>
+        <li><a href="tutorials/add-a-venue.html">Add a venue</a></li>
+        <li><a href="tutorials/update-a-venue.html">Update a venue</a></li>
+        <li><a href="tutorials/delete-a-venue.html">Delete a venue</a></li>
+      </ul>
+    </li>
+    <li><strong>Concerts</strong>
+      <ul>
+        <li><a href="tutorials/add-a-concert.html">Add a concert</a></li>
+        <li><a href="tutorials/update-a-concert.html">Update a concert</a></li>
+        <li><a href="tutorials/search-for-concerts-by-venue.html">Search concerts by venue</a></li>
+        <li><a href="tutorials/search-for-concerts-by-artist.html">Search concerts by artist</a></li>
+        <li><a href="tutorials/delete-a-concert.html">Delete a concert</a></li>
+      </ul>
+    </li>
+  </ul>
 </details>
 
-## References
+---
 
-All venue-related actions are performed under the [`venues`](references/venues.md) resource, and all concert-related actions are performed with the [`concerts`](references/concerts.md) resource.
+## API Reference
 
-To view detailed descriptions the service's resources and individual API calls, click **References** below:
+Explore available endpoints under the [`venues`](references/venues.html) and [`concerts`](references/concerts.html) resources:
+
 <details>
-  <summary>References</summary>
+  <summary><strong>View Endpoint Reference List</strong></summary>
   
-<ul>
-  <li><a href="references/venues.html"><strong>venues</strong></a> resource
-    <ul>
-      <li><strong>POST</strong>
-        <ul>
-          <li><a href="references/post-add-venue.html">Add venue</a></li>
-        </ul>
-      </li>
-      <li><strong>PUT</strong>
-        <ul>
-          <li><a href="references/put-update-venue.html">Update venue</a></li>
-        </ul>
-      </li>
-      <li><strong>GET</strong>
-        <ul>
-          <li><a href="references/get-venues.html">Get venues</a></li>
-          <li><a href="references/get-venue-details.html">Get venue details</a></li>
-          <li><a href="references/get-venue-by-name.html">Get venue by name</a></li>
-          <li><a href="references/get-venues-by-city.html">Get venues by city</a></li>
-        </ul>
-      </li>
-      <li><strong>DELETE</strong>
-        <ul>
-          <li><a href="references/delete-venue.html">Delete venue</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  
-  <li><a href="references/concerts.html"><strong>concerts</strong></a> resource
-    <ul>
-      <li><strong>POST</strong>
-        <ul>
-          <li><a href="references/post-add-concert.html">Add concert</a></li>
-        </ul>
-      </li>
-      <li><strong>PUT</strong>
-        <ul>
-          <li><a href="references/put-update-concert.html">Update concert</a></li>
-        </ul>
-      </li>
-      <li><strong>GET</strong>
-        <ul>
-          <li><a href="references/get-concerts.html">Get concerts</a></li>
-          <li><a href="references/get-concert-details.html">Get concert details</a></li>
-          <li><a href="references/get-concerts-by-venue-id.html">Get concerts by venue id</a></li>
-          <li><a href="references/get-concerts-by-artist.html">Get concerts by artist</a></li>
-          <li><a href="references/get-concerts-by-date.html">Get concerts by date</a></li>
-        </ul>
-      </li>
-      <li><strong>DELETE</strong>
-        <ul>
-          <li><a href="references/delete-concert.html">Delete concert</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
+  <ul>
+    <li><a href="references/venues.html"><strong>Venues Endpoint (`/venues`)</strong></a>
+      <ul>
+        <li><span class="badge-http badge-post">POST</span> <a href="references/post-add-venue.html">Add venue</a></li>
+        <li><span class="badge-http badge-put">PUT</span> <a href="references/put-update-venue.html">Update venue details</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-venues.html">List all venues</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-venue-details.html">Get venue by ID</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-venue-by-name.html">Find venue by name</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-venues-by-city.html">Filter venues by city</a></li>
+        <li><span class="badge-http badge-delete">DELETE</span> <a href="references/delete-venue.html">Delete venue</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="references/concerts.html"><strong>Concerts Endpoint (`/concerts`)</strong></a>
+      <ul>
+        <li><span class="badge-http badge-post">POST</span> <a href="references/post-add-concert.html">Create concert listing</a></li>
+        <li><span class="badge-http badge-put">PUT</span> <a href="references/put-update-concert.html">Update concert listing</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-concerts.html">List all concerts</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-concert-details.html">Get concert by ID</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-concerts-by-venue-id.html">Find concerts by venue ID</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-concerts-by-artist.html">Find concerts by artist</a></li>
+        <li><span class="badge-http badge-get">GET</span> <a href="references/get-concerts-by-date.html">Filter concerts by date</a></li>
+        <li><span class="badge-http badge-delete">DELETE</span> <a href="references/delete-concert.html">Delete concert listing</a></li>
+      </ul>
+    </li>
+  </ul>
 </details>
 
-## Contact Us
+---
 
-If you have questions or inquiries related to **Local-Show-Tive** or its documentation, please email `levigbeverly@gmail.com`.
+## Support & Contact
+
+Have questions or feedback about **Local-Show-Tive**? Reach out via email at [`levigbeverly@gmail.com`](mailto:levigbeverly@gmail.com).
