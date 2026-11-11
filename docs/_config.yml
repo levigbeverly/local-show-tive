@@ -4,3 +4,6 @@ sass:
 
 # Include custom head HTML
 head_custom: _includes/head_custom.html
+
+# In docs/_config.yml
+color_scheme: dark
