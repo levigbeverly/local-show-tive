@@ -1,6 +1,112 @@
-<!-- favicon -->
-<link rel="icon" href="img/favicon.ico">
+<!-- Google Fonts & FontAwesome -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  /* Base Dark Theme Overrides */
+  body {
+    background-color: #0b0c10 !important;
+    color: #e2e8f0 !important;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  }
+
+  .site-header, .side-bar, .main-header {
+    background-color: #12141c !important;
+    border-color: #1f2430 !important;
+  }
+
+  .main-content {
+    background-color: #0b0c10 !important;
+    color: #e2e8f0 !important;
+  }
+
+  /* Headings & Links */
+  h1, h2, h3, h4, h5, h6, .site-title {
+    color: #ffffff !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  }
+
+  a, a:visited {
+    color: #f59e0b !important;
+  }
+
+  a:hover {
+    color: #fbbf24 !important;
+  }
+
+  /* Card Grid Layout */
+  .card-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    gap: 1.25rem !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  .card-box {
+    background: #12141c !important;
+    border: 1px solid #1f2430 !important;
+    border-radius: 10px !important;
+    padding: 1.25rem !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+    transition: transform 0.2s ease, border-color 0.2s ease !important;
+  }
+
+  .card-box:hover {
+    transform: translateY(-2px) !important;
+    border-color: #f59e0b !important;
+  }
+
+  .card-box h3 {
+    margin-top: 0 !important;
+    color: #f59e0b !important;
+    font-size: 1.1rem !important;
+  }
+
+  .card-box p {
+    color: #94a3b8 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* HTTP Method Badges */
+  .badge-http {
+    display: inline-block !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    padding: 0.2rem 0.55rem !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+    letter-spacing: 0.05em !important;
+    margin-right: 0.4rem !important;
+    text-transform: uppercase !important;
+  }
+
+  .badge-get    { background-color: #10b981 !important; }
+  .badge-post   { background-color: #3b82f6 !important; }
+  .badge-put    { background-color: #f59e0b !important; }
+  .badge-delete { background-color: #ef4444 !important; }
+
+  /* Code & Pre Blocks */
+  code {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #1a1d29 !important;
+    color: #f59e0b !important;
+    border: 1px solid #2d3748 !important;
+    border-radius: 4px !important;
+    padding: 0.15rem 0.4rem !important;
+  }
+
+  div.highlighter-rouge, pre {
+    background-color: #12141c !important;
+    border: 1px solid #1f2430 !important;
+    border-radius: 8px !important;
+  }
+
+  /* Horizontal Rules */
+  hr {
+    border-color: #1f2430 !important;
+  }
+</style>
