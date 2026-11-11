@@ -13,10 +13,12 @@ nav_order: 1
     <h3>🎫 Concert-Goers</h3>
     <p>Discover upcoming local shows, search by venue, and filter by artist.</p>
   </div>
+
   <div class="card-box">
     <h3>🏟️ Venue Owners</h3>
     <p>Publish and manage accurate venue details, location data, and schedules.</p>
   </div>
+
   <div class="card-box">
     <h3>🎸 Artists & Managers</h3>
     <p>Post show listings, update tour dates, and keep your audience informed.</p>
