@@ -1,3 +1,88 @@
 img[alt=local-show-tive] {
     height: 150px;
 }
+// ==========================================================================
+// LOCAL-SHOW-TIVE: Stage Light & Train Motif Custom Overrides
+// ==========================================================================
+
+:root {
+--font-family-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+--font-family-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+
+// Dark Stage Theme Palette
+--bg-stage-dark: #0b0c10;
+--bg-stage-card: #12141c;
+--bg-stage-border: #2d334a;
+
+// Accents
+--color-headlight: #f59e0b;
+--color-magenta: #f43f5e;
+--color-cyan: #06b6d4;
+
+// HTTP Badges
+--http-get: #10b981;
+--http-post: #06b6d4;
+--http-put: #f59e0b;
+--http-delete: #f43f5e;
+}
+
+body {
+font-family: var(--font-family-body);
+}
+
+code, pre {
+font-family: var(--font-family-mono) !important;
+}
+
+// Brand Title Highlight
+.site-title {
+color: var(--color-headlight) !important;
+font-weight: 800 !important;
+}
+
+// Custom HTTP Badges for Reference Pages
+.badge-http {
+display: inline-block;
+font-family: var(--font-family-mono);
+font-size: 0.75rem;
+font-weight: 700;
+padding: 0.2rem 0.55rem;
+border-radius: 6px;
+text-transform: uppercase;
+color: #ffffff;
+letter-spacing: 0.05em;
+margin-right: 0.5rem;
+vertical-align: middle;
+}
+
+.badge-get    { background-color: var(--http-get); }
+.badge-post   { background-color: var(--http-post); }
+.badge-put    { background-color: var(--http-put); }
+.badge-delete { background-color: var(--http-delete); }
+
+// Container Card Grid for landing pages
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.25rem;
+margin: 1.5rem 0;
+}
+
+.card-box {
+border: 1px solid #e2e8f0;
+border-radius: 12px;
+padding: 1.25rem;
+background: #ffffff;
+transition: all 0.2s ease;
+}
+
+.card-box:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
+}
+
+// Dark Mode Support for Card Grid
+html.dark .card-box {
+background: var(--bg-stage-card);
+border-color: var(--bg-stage-border);
+}
