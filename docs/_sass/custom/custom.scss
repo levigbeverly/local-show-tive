@@ -1,85 +1,50 @@
 // ==========================================================================
-// LOCAL-SHOW-TIVE: Stage Light & Train Motif Custom Overrides
+// LOCAL-SHOW-TIVE: Custom Theme Overrides
 // ==========================================================================
 
-:root {
---font-family-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
---font-family-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+// 1. Dark Theme Color Overrides for Just the Docs
+$body-background-color: #0b0c10 !default;
+$sidebar-color: #12141c !default;
+$link-color: #f59e0b !default;
+$border-color: #1f2430 !default;
 
-// Dark Stage Theme Palette
---bg-stage-dark: #0b0c10;
---bg-stage-card: #12141c;
---bg-stage-border: #2d334a;
-
-// Accents
---color-headlight: #f59e0b;
---color-magenta: #f43f5e;
---color-cyan: #06b6d4;
-
-// HTTP Badges
---http-get: #10b981;
---http-post: #06b6d4;
---http-put: #f59e0b;
---http-delete: #f43f5e;
-}
-
-body {
-font-family: var(--font-family-body);
-}
-
-code, pre {
-font-family: var(--font-family-mono) !important;
-}
-
-// Brand Title Highlight
-.site-title {
-color: var(--color-headlight) !important;
-font-weight: 800 !important;
-}
-
-// Custom HTTP Badges for Reference Pages
-.badge-http {
-display: inline-block;
-font-family: var(--font-family-mono);
-font-size: 0.75rem;
-font-weight: 700;
-padding: 0.2rem 0.55rem;
-border-radius: 6px;
-text-transform: uppercase;
-color: #ffffff;
-letter-spacing: 0.05em;
-margin-right: 0.5rem;
-vertical-align: middle;
-}
-
-.badge-get    { background-color: var(--http-get); }
-.badge-post   { background-color: var(--http-post); }
-.badge-put    { background-color: var(--http-put); }
-.badge-delete { background-color: var(--http-delete); }
-
-// Container Card Grid for landing pages
+// 2. Card Grid Layout (Concert-Goers, Venue Owners, etc.)
 .card-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 1.25rem;
-margin: 1.5rem 0;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin: 1.5rem 0 !important;
 }
 
 .card-box {
-border: 1px solid #e2e8f0;
-border-radius: 12px;
-padding: 1.25rem;
-background: #ffffff;
-transition: all 0.2s ease;
+  background: #12141c !important;
+  border: 1px solid #1f2430 !important;
+  border-radius: 10px !important;
+  padding: 1.25rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
 }
 
-.card-box:hover {
-transform: translateY(-2px);
-box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
+.card-box h3 {
+  margin-top: 0 !important;
+  color: #f59e0b !important;
+  font-size: 1.1rem !important;
 }
 
-// Dark Mode Support for Card Grid
-html.dark .card-box {
-background: var(--bg-stage-card);
-border-color: var(--bg-stage-border);
+// 3. HTTP Method Badges
+.badge-http {
+  display: inline-block !important;
+  font-family: monospace !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  padding: 0.2rem 0.55rem !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  letter-spacing: 0.05em !important;
+  margin-right: 0.4rem !important;
+  text-transform: uppercase !important;
 }
+
+.badge-get    { background-color: #10b981 !important; }
+.badge-post   { background-color: #3b82f6 !important; }
+.badge-put    { background-color: #f59e0b !important; }
+.badge-delete { background-color: #ef4444 !important; }
