@@ -1,8 +1,6 @@
-title: "Local-Show-Tive API Service"
-remote_theme: just-the-docs/just-the-docs
-color_scheme: "light_contrast"
-search_enabled: false
-callouts:
-  note:
-    title: Note
-    color: blue
+# Add to docs/_config.yml if not already present:
+sass:
+  sass_dir: _sass
+
+# Include custom head HTML
+head_custom: _includes/head_custom.html
