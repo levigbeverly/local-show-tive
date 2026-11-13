@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# Local-Show-Tive REST API
+# Local-Show-Tive API Service
 
 **Local-Show-Tive** is a lightweight REST API service for discovering, organizing, and managing local concerts and venues across the United States.
 
