@@ -1,3 +1,7 @@
+title: Local-Show-Tive API Service
+description: REST API service for local concert planning
+remote_theme: just-the-docs/just-the-docs
+
 # Add to docs/_config.yml if not already present:
 sass:
   sass_dir: _sass
